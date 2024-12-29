@@ -1,16 +1,16 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![DongHao Yang](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/yangdonghao621)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+我目前在北京航空航天大学计算机学院，攻读计算机技术专业硕士
 
 #### Email
 yangdonghao@buaa.edu.cn
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2023—now (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2019—2023.
+硕士, 计算机技术, 北京航空航天大学, 2023—now (expected).\
+学士, 软件工程, 北京航空航天大学, 2019—2023.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Code Generation, Software Engineering .
 
