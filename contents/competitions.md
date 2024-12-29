@@ -5,4 +5,3 @@
 - 2023. 『猛犸杯』国际生命科学数据创新大赛（2023 MICOS）. 基于机器学习和动态规划的DNA编码纠错系统. <strong>优秀奖<\strong>. [[Code]](https://github.com/yangdonghao621/MengMa_DNA) 
 
 - 2020-2021. 北京航空航天大学冯如杯. 面向安卓平台的互动视频APP. <strong>三等奖<\strong>. [[Code]](https://github.com/yangdonghao621/Contact_Client) 
-
