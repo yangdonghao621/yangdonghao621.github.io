@@ -1,8 +1,7 @@
 
 
-[![DongHao Yang](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/yangdonghao621)
-
-你好，我是杨东浩，我很热爱人工智能，我期待看到它改变世界。我目前在北京航空航天大学计算机学院，攻读计算机技术专业硕士。
+你好，我是杨东浩，我很热爱人工智能，我期待看到它改变世界。
+我目前在北京航空航天大学计算机学院，攻读计算机技术专业硕士。
 
 #### Email
 yangdonghao@buaa.edu.cn
