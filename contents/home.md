@@ -17,5 +17,8 @@ yangdonghao@buaa.edu.cn
 AI4SE, Code Generation.
 
 #### Github
-https://github.com/yangdonghao621
+[Github](https://github.com/yangdonghao621)
+
+#### Google Scholar
+[Google Scholar](https://scholar.google.com.hk/citations?user=daokHw0AAAAJ&hl=zh-CN)
 
