@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Donghao
 last_name: Yang
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the best way to reach me. I'm always happy to chat about AI for Software Engineering, LLM agents, and research collaboration.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -324,7 +324,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: false # disabled: no blog posts written yet; re-enable when you start blogging
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
@@ -340,8 +340,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Yang]
+  first_name: [Donghao, D.]
 
   style: apa
   locale: en

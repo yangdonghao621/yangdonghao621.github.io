@@ -1,115 +1,56 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{yang2025autoplc,
+author = {Yang, Donghao* and Wu, Aolang* and Zhang, Tianyi* and Zhang, Li and Lian, Xiaoli and Liu, Fang and Ren, Yuming and Tian, Jiaji and Che, Xiaoyin},
+title = {AutoPLC: Generating Vendor-Aware Structured Text for Programmable Logic Controllers},
+year = {2025},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ASE63991.2025.00297},
+doi = {10.1109/ASE63991.2025.00297},
+abstract = {Among the programming languages for Programmable Logic Controllers (PLCs), Structured Text (ST) is widely adopted for industrial automation due to its expressiveness and flexibility. However, major vendors implement ST with proprietary extensions and hardware-specific libraries - Siemens’ SCL and CODESYS’ ST each differ in syntax and functionality. This fragmentation forces engineers to relearn implementation details across platforms, creating substantial productivity barriers. To address this challenge, we developed AutoPLC, a framework capable of automatically generating vendor-aware ST code directly from natural language requirements. Our solution begins by building two essential knowledge sources tailored to each vendor’s specifications: a structured API library containing platform-exclusive functions, and an annotated case database that captures real-world implementation experience. Building on these foundations, we created a four-stage generation process that combines step-wise planning (enhanced with a lightweight natural language state machine support for control logic), contextual case retrieval using LLM-based reranking, API recommendation guided by industrial data, and dynamic validation through direct interaction with vendor IDEs. Implemented for Siemens TIA Portal and the CODESYS platform, AutoPLC achieves 90\%+ compilation success on our 914-task benchmark (covering general-purpose and process control functions), outperforming all selected baselines, at an average cost of only $0.13 per task. Experienced PLC engineers positively assessed the practical utility of the generated code, including cases that failed compilation.},
+booktitle = {2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+pages = {3593–3604},
+numpages = {12},
+location = {Seoul, Korea, Republic of},
+preview = {autoplc-preview.png},
+annotation = {* Equal contribution (co-first authors).}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@inproceedings{zhao2024drcodepilot,
+author = {Zhao, Jiuang* and Yang, Donghao* and Zhang, Li and Lian, Xiaoli and Yang, Zitian and Liu, Fang},
+title = {Enhancing Automated Program Repair with Solution Design},
+year = {2024},
+isbn = {9798400712487},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3691620.3695537},
+doi = {10.1145/3691620.3695537},
+abstract = {Automatic Program Repair (APR) endeavors to autonomously rectify issues within specific projects, which generally encompasses three categories of tasks: bug resolution, new feature development, and feature enhancement. Despite extensive research proposing various methodologies, their efficacy in addressing real issues remains unsatisfactory. It's worth noting that, typically, engineers have design rationales (DR) on solution--- planed solutions and a set of underlying reasons---before they start patching code. In open-source projects, these DRs are frequently captured in issue logs through project management tools like Jira. This raises a compelling question: How can we leverage DR scattered across the issue logs to efficiently enhance APR?To investigate this premise, we introduce DRCodePilot, an approach designed to augment GPT-4-Turbo's APR capabilities by incorporating DR into the prompt instruction. Furthermore, given GPT-4's constraints in fully grasping the broader project context and occasional shortcomings in generating precise identifiers, we have devised a feedback-based self-reflective framework, in which we prompt GPT-4 to reconsider and refine its outputs by referencing a provided patch and suggested identifiers. We have established a benchmark comprising 938 issue-patch pairs sourced from two open-source repositories hosted on GitHub and Jira. Our experimental results are impressive: DRCodePilot achieves a full-match ratio that is a remarkable 4.7x higher than when GPT-4 is utilized directly. Additionally, the CodeBLEU scores also exhibit promising enhancements. Moreover, our findings reveal that the standalone application of DR can yield promising increase in the full-match ratio across CodeLlama, GPT-3.5, and GPT-4 within our benchmark suite. We believe that our DRCodePilot initiative heralds a novel human-in-the-loop avenue for advancing the field of APR.},
+booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {1706–1718},
+numpages = {13},
+keywords = {design rationale, issue logs, developer discussion, automated program repair},
+location = {Sacramento, CA, USA},
+series = {ASE '24},
+preview = {drcopilot-preview.png},
+annotation = {* Equal contribution (co-first authors).}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@inproceedings{zhao2024drminer,
+author = {Zhao, Jiuang and Yang, Zitian and Zhang, Li and Lian, Xiaoli and Yang, Donghao and Tan, Xin},
+title = {DRMiner: Extracting Latent Design Rationale from Jira Issue Logs},
+year = {2024},
+isbn = {9798400712487},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3691620.3695019},
+doi = {10.1145/3691620.3695019},
+abstract = {Software architectures are usually meticulously designed to address multiple quality concerns and support long-term maintenance. However, there may be a lack of motivation for developers to document design rationales (i.e., the design alternatives and the underlying arguments for making or rejecting decisions) when they will not gain immediate benefit, resulting in a lack of standard capture of these rationales. With the turnover of developers, the architecture inevitably becomes eroded. This issue has motivated a number of studies to extract design knowledge from open-source communities in recent years. Unfortunately, none of the existing research has successfully extracted solutions alone with their corresponding arguments due to challenges such as the intricate semantics of online discussions and the lack of benchmarks for design rationale extraction.In this paper, we propose a novel approach, named DRMiner, to automatically mine latent design rationales from developers' live discussion in open-source community (i.e., issue logs in Jira). To better identify solutions and their relevant arguments, DRMiner skillfully decomposes the problem into multiple text classification tasks and tackles them using prompt tuning of large language models (LLMs) and specific heuristic features. To evaluate DRMiner, we acquire issue logs from Cassandra, Flink, and Solr repositories in Jira and form a dataset for design rationale mining. Experimental results show that DRMiner outperforms all baselines and achieves F1 improvements of 24\%, 22\%, and 20\% for mining design rationales, solutions, and arguments, respectively, compared to the best baseline. Furthermore, we investigate the usefulness of the design rationales mined by DRMiner for automated program repair (APR) and find that advanced LLMs, when prompted with these extracted rationales, generate 10×–18× more full-match patches and achieve a 10\%-13\% gain in CodeBLEU scores.},
+booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {468–480},
+numpages = {13},
+keywords = {design rationale, issue logs, design discussion, design recovery, program maintenance},
+location = {Sacramento, CA, USA},
+series = {ASE '24}
 }

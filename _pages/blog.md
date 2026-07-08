@@ -4,6 +4,7 @@ permalink: /blog/
 title: blog
 nav: true
 nav_order: 1
+published: false # TODO: remove this line once you start writing blog posts
 pagination:
   enabled: true
   collection: posts
