@@ -1,0 +1,214 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> DNA Storage via Redundant Homologous Sequences | Donghao Yang </title> <meta name="author" content="Donghao Yang"> <meta name="description" content="Voting-based error correction for DNA data storage. Encoding-agnostic recovery with 100% accuracy at 15× redundancy."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://yangdonghao621.github.io/projects/dna-storage/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Donghao</span> Yang </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">DNA Storage via Redundant Homologous Sequences</h1> <p class="post-description">Voting-based error correction for DNA data storage. Encoding-agnostic recovery with 100% accuracy at 15× redundancy.</p> </header> <article> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/MyTalk-480.webp 480w,/assets/img/Mengma_Figures/MyTalk-800.webp 800w,/assets/img/Mengma_Figures/MyTalk-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/MyTalk.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <figcaption class="figure-caption text-center">Presenting our approach at the competition.</figcaption> </div> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/OurAward-480.webp 480w,/assets/img/Mengma_Figures/OurAward-800.webp 800w,/assets/img/Mengma_Figures/OurAward-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/OurAward.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <figcaption class="figure-caption text-center"><strong>Team Baseline — 7th place out of 190 teams</strong></figcaption> </div> </div> <hr> <blockquote> <p>🏆 <strong>7th out of 190 teams</strong> in the national DNA storage competition  ·  <a href="https://finance.sina.com.cn/stock/med/2023-11-06/doc-imztstpq7354812.shtml" rel="external nofollow noopener" target="_blank">📰 Read news coverage</a></p> </blockquote> <hr> <h2 id="1-project-overview">1. Project Overview</h2> <p>This project addresses the core challenge in DNA-based data storage: faithful recovery of original information from error-prone DNA sequences introduced during synthesis, amplification, and sequencing. We propose a novel decoding pipeline that leverages homologous sequence redundancy, unsupervised clustering, and a sliding-window voting algorithm to reconstruct error-free sequences without relying on explicit error-correcting codes embedded in the encoding stage.</p> <p>Our approach is encoding-agnostic, computationally efficient, and achieved 100% reconstruction accuracy on the competition’s 15× redundancy benchmark, ranked <strong>7th out of 190 teams</strong>.</p> <h2 id="2-problem-formulation">2. Problem Formulation</h2> <p>The DNA storage pipeline consists of two phases:</p> <table> <thead> <tr> <th>Phase</th> <th>Input</th> <th>Output</th> <th>Evaluation Metric</th> </tr> </thead> <tbody> <tr> <td>Encoding</td> <td>Image (JPG/PNG/WEBP/BMP)</td> <td>DNA sequence</td> <td>Information density (20%), synthesis/sequencing compatibility (30%)</td> </tr> <tr> <td>Decoding</td> <td>Error-prone DNA sequences</td> <td>Reconstructed image</td> <td>Similarity to original (50%)</td> </tr> </tbody> </table> <p>Key observation: Errors are sparsely distributed across individual copies. When the same sequence is replicated multiple times (homologous sequences), error positions are unlikely to coincide across copies. This redundancy enables consensus-based reconstruction without prior error models.</p> <h2 id="3-encoding-strategy">3. Encoding Strategy</h2> <p>We adopt a two-stage encoding pipeline:</p> <p><strong>Image preprocessing:</strong> Compression and downsampling (format-adaptive) to reduce bitstream length while preserving perceptual quality.</p> <p><strong>Fountain-code-based mapping:</strong> Each 20-bit block encodes positional information; 208-bit blocks carry payload data. The encoded DNA sequence length is fixed at 130 nucleotides per block.</p> <p>The encoding produces N identical copies of each DNA sequence—these constitute the homologous sequence family delivered for synthesis. Reference implementation adapted from Chamaeleo.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_07-480.webp 480w,/assets/img/Mengma_Figures/Figure_07-800.webp 800w,/assets/img/Mengma_Figures/Figure_07-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_07.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 1: Encoding workflow. Image bitstreams are partitioned into 20-bit position blocks and 208-bit payload blocks, then mapped to 130-nt DNA sequences via fountain codes.</em></p> <h2 id="4-decoding-pipeline">4. Decoding Pipeline</h2> <p>The decoding phase is the core contribution of this work. It comprises three sequential modules.</p> <h3 id="41-sequence-vectorization">4.1 Sequence Vectorization</h3> <p>Each DNA sequence (length L = 120) is transformed into a 132-dimensional feature vector: 64-dim for frequency of all 3-mer combinations (4³ = 64), and 68-dim for per-position nucleotide counts over sliding windows of length 7 (⌊120/7⌋ × 4 = 68). This hybrid representation captures both compositional and positional information.</p> <h3 id="42-multi-level-clustering">4.2 Multi-Level Clustering</h3> <p>We employ a two-stage clustering strategy to group homologous sequences: DBSCAN with k-nearest-neighbor distance as adaptive density threshold, followed by K-means refinement on the resulting clusters. Outlier sequences (with abnormally low local density) are iteratively removed and re-clustered, ensuring that only true homologs are retained for reconstruction.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_09-480.webp 480w,/assets/img/Mengma_Figures/Figure_09-800.webp 800w,/assets/img/Mengma_Figures/Figure_09-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_09.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 2: Multi-level clustering pipeline. DNA sequences are vectorized into 132-dim features, clustered via DBSCAN with adaptive density threshold, then refined by K-means. Outliers are iteratively removed.</em></p> <h3 id="43-sliding-window-voting-reconstruction">4.3 Sliding-Window Voting Reconstruction</h3> <p>This is the algorithmic centerpiece of our decoder. It operates on aligned clusters and reconstructs the consensus sequence through recursive local voting.</p> <p><strong>Core Assumptions:</strong> Errors at the same position across multiple homologs are rare. Within any 4-base window, at most one error occurs in the majority of copies.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_13-480.webp 480w,/assets/img/Mengma_Figures/Figure_13-800.webp 800w,/assets/img/Mengma_Figures/Figure_13-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_13.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 3: Core sliding-window voting mechanism. A 3-base window scans aligned homologous sequences; the most frequent pattern determines the consensus base at each position.</em></p> <p><strong>Voting Mechanism:</strong> A sliding window of length 3 (stride = 1) scans the aligned sequences. The most frequent 3-base pattern is identified as the consensus fragment. The middle base of that window is voted and fixed. The window then shifts right by 1 (standard case) or by 2 (when encountering homopolymer runs, e.g., AAA).</p> <p><strong>Handling Insertions/Deletions (Indels):</strong> Indels cause misalignment, breaking simple positional voting. Our algorithm dynamically adjusts stride per sequence based on local consensus.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_14-480.webp 480w,/assets/img/Mengma_Figures/Figure_14-800.webp 800w,/assets/img/Mengma_Figures/Figure_14-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_14.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 4a: Indel handling — Case A (homopolymer). Normal sequences shift by 2; erroneous sequences skip the repeated base and fall back to Case B.</em></p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_15-480.webp 480w,/assets/img/Mengma_Figures/Figure_15-800.webp 800w,/assets/img/Mengma_Figures/Figure_15-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_15.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 4b: Indel handling — Case B (non-homopolymer). Normal sequences shift by 1; indels are detected by cross-comparing 3–5 bases of the candidate against 2–4 bases of the consensus.</em></p> <p><strong>Ambiguity Resolution:</strong> When both insertion and deletion conditions are met simultaneously, we treat it as a deletion first, shift the window by 5 positions, compare the 2–4 bases of the normal fragment against positions 4–6 of the corrected sequence, and either accept or revert based on the match.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_19-480.webp 480w,/assets/img/Mengma_Figures/Figure_19-800.webp 800w,/assets/img/Mengma_Figures/Figure_19-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_19.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 5: Ambiguity resolution. When both insertion and deletion conditions are met, we first treat it as a deletion, then compare the 2–4 bases of the normal fragment against positions 4–6 of the corrected sequence</em></p> <p><strong>Recursive Split Strategy:</strong> To mitigate local greedy failures in the middle of long sequences, we recursively split each sequence into two halves (with a 10-base overlap) and recover each half independently—one from the start, the other from the end. The overlapping region is used for consistency checking.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_21-480.webp 480w,/assets/img/Mengma_Figures/Figure_21-800.webp 800w,/assets/img/Mengma_Figures/Figure_21-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_21.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 6: Recursive split strategy. Each sequence is divided into two halves with 10-base overlap; forward recovery on the first half, backward recovery on the second.</em></p> <h2 id="5-experimental-results">5. Experimental Results</h2> <h3 id="51-dataset--setup">5.1 Dataset &amp; Setup</h3> <p>10,000 randomly generated sequences (length 159, GC ≈ 50%, max homopolymer ≤ 4), each replicated 7×. Errors injected via the official competition simulator. Hardware: single-core CPU.</p> <h3 id="52-performance-metrics">5.2 Performance Metrics</h3> <table> <thead> <tr> <th>Metric</th> <th>Value</th> </tr> </thead> <tbody> <tr> <td>Per-base accuracy</td> <td>99.76%</td> </tr> <tr> <td>Full-sequence recovery rate</td> <td>98.31%</td> </tr> <tr> <td>Min per-sequence accuracy (worst case)</td> <td>57.86%</td> </tr> <tr> <td>Total runtime (10k sequences)</td> <td>233.37 s</td> </tr> </tbody> </table> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_24-480.webp 480w,/assets/img/Mengma_Figures/Figure_24-800.webp 800w,/assets/img/Mengma_Figures/Figure_24-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_24.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 7: Key performance overview. Per-base accuracy, full-sequence recovery rate, and runtime breakdown.</em></p> <h3 id="53-competition-benchmark-15-redundancy">5.3 Competition Benchmark (15× Redundancy)</h3> <table> <thead> <tr> <th>Component</th> <th>Score</th> </tr> </thead> <tbody> <tr> <td>Compression</td> <td>94.70</td> </tr> <tr> <td>Compatibility</td> <td>71.26</td> </tr> <tr> <td>Recovery (standard)</td> <td>87.13 / 89.33</td> </tr> <tr> <td>Recovery (trap images)</td> <td>45.31</td> </tr> </tbody> </table> <p>Trap images contained fine-grained background details lost during aggressive compression—highlighting a current limitation.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_25-480.webp 480w,/assets/img/Mengma_Figures/Figure_25-800.webp 800w,/assets/img/Mengma_Figures/Figure_25-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_25.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 8: Competition benchmark scores across dimensions. Compression (94.70), compatibility (71.26), and recovery performance with and without trap images.</em></p> <h2 id="6-innovation-and-contributions">6. Innovation and Contributions</h2> <ul> <li> <strong>Encoding-agnostic recovery:</strong> Compatible with any DNA encoding scheme—no custom error-correcting codes required.</li> <li> <strong>High robustness:</strong> 100% original-sequence recovery at 15× redundancy under diverse error types.</li> <li> <strong>Practical redundancy management:</strong> Resilient to partial DNA sample loss—realistic wet-lab scenario.</li> <li> <strong>Hybrid statistical–deterministic algorithm:</strong> Density-based clustering + deterministic voting outperforms purely probabilistic or rule-based methods.</li> </ul> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/Mengma_Figures/Figure_28-480.webp 480w,/assets/img/Mengma_Figures/Figure_28-800.webp 800w,/assets/img/Mengma_Figures/Figure_28-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/Mengma_Figures/Figure_28.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <p><em>Figure 9: Summary of key innovations. Encoding-agnostic design, robustness to multiple error types, practical for partial DNA loss, and extensible with deep-learning components.</em></p> <h2 id="7-limitations-and-future-work">7. Limitations and Future Work</h2> <p>Trap image failure indicates a need for content-adaptive encoding that preserves perceptual saliency. Clustering is currently CPU-bound; GPU-accelerated distance computations will reduce runtime significantly. Extremely long homopolymer stretches (&gt;10 bases) may require additional heuristics or trained models.</p> <h2 id="8-conclusion">8. Conclusion</h2> <p>We present a complete DNA storage pipeline with a novel error-recovery framework based on homologous sequence redundancy and a sliding-window voting algorithm. The system achieves near-perfect reconstruction accuracy on benchmark datasets and is compatible with diverse encoding strategies, advancing DNA as a long-term digital storage medium.</p> <p><strong>Team:</strong> Baseline · <strong>Affiliation:</strong> Beihang University (School of Computer Science), Institute of Automation (CAS), Institute of Biophysics (CAS) · <strong>Date:</strong> Nov 01, 2023</p> <p><strong>Contributions:</strong> Donghao Yang (encoding algorithm, presentation &amp; defense) · CAS collaborators (decoding algorithm, slides &amp; visualization)</p> <hr> <p><strong>Further Reading</strong></p> <ul> <li> <a href="https://www.nature.com/articles/s41467-022-33046-w" rel="external nofollow noopener" target="_blank">Robust data storage in DNA by de Bruijn graph-based de novo strand assembly</a> — Song et al., <em>Nature Communications</em>, 2022.</li> <li> <a href="https://zhuanlan.zhihu.com/p/664617027" rel="external nofollow noopener" target="_blank">Alternative approaches to DNA storage</a> — technical review (in Chinese).</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Donghao Yang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Selected papers in AI for Software Engineering, program repair, and code generation.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Research projects, competition entries, and side explorations.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "post-how-to-write-a-strong-experimental-section-in-the-era-of-ai",
+        
+          title: "How to Write a Strong Experimental Section In The Era Of AI",
+        
+        description: "a four-move framework for turning experimental results into a scientific argument — from numbers to meaning, observations to mechanisms, individual findings to a coherent whole, and the study to the broader literature",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/writing-experimental-sections/";
+          
+        },
+      },{id: "post-rethinking-the-research-workflow-toward-an-ai-native-workspace",
+        
+          title: "Rethinking the Research Workflow: Toward an AI-Native Workspace",
+        
+        description: "why current research toolchains are fragmented and what an AI-native workspace for computational research might look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ai-native-research-workspace/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-2",
+          title: 'project 2',
+          description: "a project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-project-3-with-very-long-name",
+          title: 'project 3 with very long name',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-project-4",
+          title: 'project 4',
+          description: "another without an image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-project-5",
+          title: 'project 5',
+          description: "a project with a background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-project-7",
+          title: 'project 7',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-project-8",
+          title: 'project 8',
+          description: "an other project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
+            },},{id: "projects-project-9",
+          title: 'project 9',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
+            },},{id: "projects-dna-storage-via-redundant-homologous-sequences",
+          title: 'DNA Storage via Redundant Homologous Sequences',
+          description: "Voting-based error correction for DNA data storage. Encoding-agnostic recovery with 100% accuracy at 15× redundancy.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dna-storage/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%61%6E%67%64%6F%6E%67%68%61%6F@%62%75%61%61.%65%64%75.%63%6E", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/KuaiQ34888", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=daokHw0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/yangdonghao621", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/donghao-yang-1392b6399", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
