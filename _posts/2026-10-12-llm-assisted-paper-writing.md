@@ -5,6 +5,8 @@ date: 2026-10-12
 description: principles for the introduction and method, a three-phase human–LLM workflow, and advice on experiments and discussion
 ---
 
+{% include figure.liquid path="assets/img/headpic-llm-assisted-paper-writing.png" class="img-fluid rounded z-depth-1" %}
+
 I've been writing papers alongside LLMs long enough to stop treating them as a magic draft button. What works is a small set of principles and a clear sense of who is in charge at each stage.
 
 ## Principles for the Introduction

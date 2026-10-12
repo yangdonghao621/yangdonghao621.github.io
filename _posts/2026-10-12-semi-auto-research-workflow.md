@@ -5,6 +5,8 @@ date: 2026-10-12
 description: dividing labor between the human, the agents, and the workspace — what actually survives contact with real papers, and the hard problems that remain unsolved
 ---
 
+{% include figure.liquid path="assets/img/headpic-semi-auto-research-workflow.png" class="img-fluid rounded z-depth-1" %}
+
 A semi-automated research workflow rests on a clean division of labor: the human proposes the questions, judges scientific value, understands the agents, and organizes the paper's logic; the agents execute, explore, generate, and check; and the workspace holds state, constrains the process, and keeps results traceable.
 
 That division is easy to state and hard to keep. Here is what survived contact with real papers, and the problems I still haven't solved.
